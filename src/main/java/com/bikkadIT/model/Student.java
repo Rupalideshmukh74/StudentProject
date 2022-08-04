@@ -1,16 +1,27 @@
 package com.bikkadIT.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="STUDENT_ID")
 public class Student {
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="STUDENT_ID")
 	Integer Studentid;
 	
+	@Column(name="STUDENT_NAME")
 	String Studentname;
 	
+	@Column(name="STUDENT_EMAIL")
 	String Studentemail;
 	
+	@Column(name="STUDENT_AGE")
 	String Studentage;
 
 	public Integer getStudentid() {
