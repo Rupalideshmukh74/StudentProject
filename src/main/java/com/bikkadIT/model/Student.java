@@ -13,54 +13,55 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="STUDENT_ID")
-	Integer Studentid;
+	private Integer studentId;
 	
 	@Column(name="STUDENT_NAME")
-	String Studentname;
+	private String studentName;
 	
 	@Column(name="STUDENT_EMAIL")
-	String Studentemail;
+	private String studentEmail;
 	
 	@Column(name="STUDENT_AGE")
-	String Studentage;
+	private int studentAge;
 
-	public Integer getStudentid() {
-		return Studentid;
+	public Integer getStudentId() {
+		return studentId;
 	}
 
-	public void setStudentid(Integer studentid) {
-		Studentid = studentid;
+	public void setStudentId(Integer studentId) {
+		this.studentId = studentId;
 	}
 
-	public String getStudentname() {
-		return Studentname;
+	public String getStudentName() {
+		return studentName;
 	}
 
-	public void setStudentname(String studentname) {
-		Studentname = studentname;
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
 	}
 
-	public String getStudentemail() {
-		return Studentemail;
+	public String getStudentEmail() {
+		return studentEmail;
 	}
 
-	public void setStudentemail(String studentemail) {
-		Studentemail = studentemail;
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
 	}
 
-	public String getStudentage() {
-		return Studentage;
+	public int getStudentAge() {
+		return studentAge;
 	}
 
-	public void setStudentage(String studentage) {
-		Studentage = studentage;
+	public void setStudentAge(int studentAge) {
+		this.studentAge = studentAge;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [Studentid=" + Studentid + ", Studentname=" + Studentname + ", Studentemail=" + Studentemail
-				+ ", Studentage=" + Studentage + "]";
+		return "Student [studentId=" + studentId + ", studentName=" + studentName + ", studentEmail=" + studentEmail
+				+ ", studentAge=" + studentAge + "]";
 	}
 
+	
 	
 }
